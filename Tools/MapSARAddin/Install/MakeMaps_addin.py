@@ -260,6 +260,14 @@ class Set_Spatial_Reference_button(object):
     def onClick(self):
         pythonaddins.GPToolDialog(SAR_MaintenancePath, 'SetSpatialReference')
 
+class Slope_and_Aspect_ButtonClass(object):
+    """Implementation for Slope_and_Aspect_MakeMaps_addin.button (Button)"""
+    def __init__(self):
+        self.enabled = True
+        self.checked = False
+    def onClick(self):
+        pythonaddins.GPToolDialog(SAR_AnalysisPath, 'SlopeAnalysis')
+
 class UpdateValueLists(object):
     """Implementation for MakeMaps_addin.Extension_UVL (Extension)"""
     def __init__(self):
