@@ -290,3 +290,11 @@ class Update_Value_Lists_menu(object):
         self.checked = False
     def onClick(self):
         pythonaddins.GPToolDialog(SAR_toolboxPath, 'UpdateValueLists')
+
+class Viewshed_Analysis_ButtonClass(object):
+    """Implementation for Viewshed_Analysis_MakeMaps_addin.button (Button)"""
+    def __init__(self):
+        self.enabled = True
+        self.checked = False
+    def onClick(self):
+        pythonaddins.GPToolDialog(SAR_AnalysisPath, 'ViewshedAnalysis')
